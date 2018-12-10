@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-class DictFields {
+class DictionaryFields {
 
     @JsonProperty("results")
     public void getResults(List<Result> results) {

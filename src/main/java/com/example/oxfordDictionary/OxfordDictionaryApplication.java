@@ -33,7 +33,7 @@ public class OxfordDictionaryApplication {
 
 				try (Response response = call.execute()) {
 					String respBodyStr = response.body().string();
-					DictFields dictFields = mapper.readValue(respBodyStr, DictFields.class);
+					DictionaryFields dictFields = mapper.readValue(respBodyStr, DictionaryFields.class);
 				} catch (NullPointerException e) {
 					System.out.println("Oxford Dictionary did not return anything.");
 				}
