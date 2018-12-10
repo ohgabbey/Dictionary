@@ -17,10 +17,10 @@ class DictionaryFields {
         List<Entry> entryList = lexicalEntries.getEntries();
         entryList.forEach( entry -> {
             System.out.println("\nEtymology: ");
-            System.out.print("\t\u2202 " + entry.getEtymologies().toString().replace("[", "").replace("]", ""));
+            System.out.print("\t\u2022 " + entry.getEtymologies().toString().replace("[", "").replace("]", ""));
             System.out.println("\nDefinition: ");
             entry.getSenses().forEach( sense -> {
-                System.out.println("\t\u2202 " + sense.getDefinitions().toString().replace("[", "").replace("]", ""));
+                System.out.println("\t\u2022 " + sense.getDefinitions().toString().replace("[", "").replace("]", ""));
             });
         } );
     }
